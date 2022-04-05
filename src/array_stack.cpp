@@ -12,7 +12,7 @@ namespace assignment {
       throw std::invalid_argument("capacity is not positive");
     }
     capacity_ = capacity;
-    data_ = new int[capacity];
+    data_ = new int[capacity]{0};
     std::fill(data_, data_ + capacity, 0);
     // Write your code here ...
   }
@@ -80,7 +80,7 @@ namespace assignment {
     size_ = static_cast<int>(values.size());
     capacity_ = capacity;
 
-    data_ = new int[capacity]{};
+    data_ = new int[capacity]{0};
 
     std::copy(values.data(), values.data() + size_, data_);
   }

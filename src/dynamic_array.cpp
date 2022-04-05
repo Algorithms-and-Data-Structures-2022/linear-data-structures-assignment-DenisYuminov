@@ -149,5 +149,3 @@ namespace assignment {
   }
 
 }
-
-}  // namespace assignment
