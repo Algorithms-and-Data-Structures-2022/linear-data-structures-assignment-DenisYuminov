@@ -22,7 +22,7 @@ namespace assignment {
   }
 
   void ArrayStack::Push(int value) {
-    if (size_ >= capacity_){
+    if (size_ >= capacity_) {
       Resize(capacity_ + kCapacityGrowthCoefficient);
     }
     data_[size_] = value;
@@ -33,7 +33,7 @@ namespace assignment {
     if (IsEmpty()) {
       return false;
     }
-    data_[size_-1] = 0;
+    data_[size_ - 1] = 0;
     size_ -= 1;
     return true;
   }
@@ -48,7 +48,7 @@ namespace assignment {
     if (IsEmpty()) {
       return std::nullopt;
     }
-    return data_[size_-1];
+    return data_[size_ - 1];
   }
 
   bool ArrayStack::IsEmpty() const {
